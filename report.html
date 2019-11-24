@@ -13752,9 +13752,9 @@ $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 
 <span class="n">y_val_greater_50K</span> <span class="o">=</span> <span class="n">y_val</span><span class="p">[</span><span class="n">y_val</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">size</span>
 <span class="n">y_val_at_most_50K</span> <span class="o">=</span> <span class="n">y_val</span><span class="p">[</span><span class="n">y_val</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">size</span>
 
-<span class="n">TP</span> <span class="o">=</span> <span class="n">y_val_at_most_50K</span>
+<span class="n">TP</span> <span class="o">=</span> <span class="n">y_val_greater_50K</span>
 <span class="n">TN</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">FP</span> <span class="o">=</span> <span class="n">y_val_greater_50K</span>
+<span class="n">FP</span> <span class="o">=</span> <span class="n">y_val_at_most_50K</span>
 <span class="n">FN</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#TODO： 计算准确率</span>
